@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>100 Heartbeats of Love</title>
+  <link href="https://fonts.googleapis.com/css?family=Dancing+Script:700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="background-animation"></div>
+  <div id="greeting-modal" class="greeting-modal">
+    <div class="greeting-card">
+      <div class="greeting-title">Hi Manasa! 💖</div>
+      <div class="greeting-message">Welcome to your special card.Click below to begin your journey of love!</div>
+      <button id="greeting-continue">Open Card</button>
+    </div>
+  </div>
+  <div class="center-container">
+    <div id="heart-container">
+      <!-- Glowing animated heart SVG -->
+      <svg id="heart" viewBox="0 0 100 90" width="180" height="160">
+        <path d="M10,30 A20,20 0 0,1 50,30 A20,20 0 0,1 90,30 Q90,60 50,85 Q10,60 10,30 Z" />
+      </svg>
+    </div>
+    <button id="start-btn">Start</button>
+    <div id="message-container" class="hidden">
+      <div id="love-meter-container">
+        <div id="love-meter-bar"></div>
+        <div id="love-meter-label">0%</div>
+      </div>
+      <div id="love-message"></div>
+      <button id="next-btn">Next</button>
+    </div>
+    <button id="music-toggle" class="music-btn" title="Toggle Music">
+      <span id="music-icon">&#127925;</span>
+    </button>
+  </div>
+  <div id="final-message" class="hidden">
+    <div class="final-text">
+      “I may not be able to promise forever… but I promise this love is true.”
+    </div>
+    <span id="signature" class="signature">— Arif</span>
+  </div>
+  <audio id="bg-music" src="assets/love_bg_music.mp3" loop autoplay></audio>
+  <script src="script.js"></script>
+</body>
+</html> 
